@@ -1,0 +1,25 @@
+.header{
+    display:flex;
+    align-items:center;
+    
+}
+
+.header a{
+    display:flex;
+    align-items:center;
+    text-decoration: none;
+}
+
+.header .logo{
+    max-height: 50px;
+}
+
+.header .dashIcon{
+    padding-left: 25px;
+    align-items: center;
+}
+
+
+.header .dashIcon i{
+    padding-right: 5px;
+}

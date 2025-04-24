@@ -1,0 +1,17 @@
+.v-middle{
+    vertical-align: middle;
+}
+
+.footer{
+    background-color: #005CB4;
+    position: fixed;
+    bottom: 0;
+    display:flex;
+    justify-content:flex-end;
+    color: #fff
+}
+
+.footer span{
+    font-size: 1rem;
+    font: weight 100px;
+}
