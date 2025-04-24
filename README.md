@@ -81,4 +81,4 @@ A solução foi desenvolvida dentro da solution Ambev.DeveloperEvaluation.sln. V
 
 ---
 
- Projeto feito com dedicação, fiz com carinho pois, desejo muito fazer parte da NTT e evoluir em conjunto com a empresa.
+ Projeto feito com dedicação.
