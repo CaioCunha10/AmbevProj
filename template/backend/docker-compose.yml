@@ -1,0 +1,36 @@
+version: '3'
+services:
+  webapi:
+    image: ambevdeveloperevaluationwebapi
+    build:
+      context: .
+      dockerfile: src/Ambev.DeveloperEvaluation.WebApi/Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - database
+      - nosql
+    environment:
+      - MONGO_CONNECTION_STRING=mongodb://developer:ev@luAt10n@nosql:27017
+
+  database:
+    image: postgres:13
+    environment:
+      POSTGRES_DB: developer_evaluation
+      POSTGRES_USER: developer
+      POSTGRES_PASSWORD: ev@luAt10n
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  nosql:
+    image: mongo:6.0
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: developer
+      MONGO_INITDB_ROOT_PASSWORD: ev@luAt10n
+    ports:
+      - "27017:27017"
+
+volumes: 
+  pgdata:
