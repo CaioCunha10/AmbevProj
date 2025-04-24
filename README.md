@@ -1,6 +1,5 @@
  ---
 
-# Projeto de Avaliação de Desenvolvedor
 
 Este projeto consiste em uma API para gerenciamento de vendas, seguindo o padrão **DDD** (Domain-Driven Design). A aplicação está configurada para rodar com **Docker** e **Docker Compose**.
 
